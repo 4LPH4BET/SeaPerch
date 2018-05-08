@@ -1,3 +1,5 @@
+//using with putty for pressing without enter on serial moniter 
+
 int dir1PinA = 2;
 int dir2PinA = 3;
 int speedPinA = A0; // Needs to be a PWM pin to be able to control motor speed
@@ -127,8 +129,6 @@ void turnLeftBACK(){
     digitalWrite(dir1PinA, LOW);
     digitalWrite(dir2PinA, HIGH);
     analogWrite(speedPinB, 0);
-//  digitalWrite(dir1PinB, LOW);
-//  digitalWrite(dir2PinB, HIGH);
     digitalWrite(dir1PinB, HIGH);
     digitalWrite(dir2PinB, LOW); 
     Serial.println("TURN L B");
@@ -141,8 +141,6 @@ void turnLeftForward(){
     digitalWrite(dir1PinA, HIGH);
     digitalWrite(dir2PinA, LOW);
     analogWrite(speedPinB, 0);
-//  digitalWrite(dir1PinB, LOW);
-//  digitalWrite(dir2PinB, HIGH);
     digitalWrite(dir1PinB, HIGH);
     digitalWrite(dir2PinB, LOW); 
     Serial.println("TURN L B");
@@ -151,39 +149,22 @@ void turnLeftForward(){
 
 void forward(){
   analogWrite(speedPinA, 255);
-  analogWrite(speedPinB, 255);
-//  digitalWrite(dir1PinA, LOW);
-//  digitalWrite(dir2PinA, HIGH);
-//  digitalWrite(dir1PinB, LOW);
-//  digitalWrite(dir2PinB, HIGH);
-    digitalWrite(dir1PinA, HIGH);
+  digitalWrite(dir1PinA, HIGH);
   digitalWrite(dir2PinA, LOW);
+  analogWrite(speedPinB, 255);
   digitalWrite(dir1PinB, HIGH);
   digitalWrite(dir2PinB, LOW);
-
-
-//
-//
-//  analogWrite(speedPinC, 200);
-//  digitalWrite(dir1PinC, LOW);
-//  digitalWrite(dir2PinC, HIGH);
   Serial.println("Forward");
   Serial.println("   ");
 }
 
 void back(){
   analogWrite(speedPinA, 150);
-  analogWrite(speedPinB, 150);
-//  digitalWrite(dir1PinA, HIGH);
-//  digitalWrite(dir2PinA, LOW);
-//  digitalWrite(dir1PinB, HIGH);
-//  digitalWrite(dir2PinB, LOW);
-
   digitalWrite(dir1PinA, LOW);   
   digitalWrite(dir2PinA, HIGH);
+  analogWrite(speedPinB, 150);
   digitalWrite(dir1PinB, LOW);
   digitalWrite(dir2PinB, HIGH);
-  
   Serial.println("BACKKKK!!!");
   Serial.println("   ");
 }
