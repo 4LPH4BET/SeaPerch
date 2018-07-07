@@ -11,7 +11,6 @@ int speedPinB = A1; // Needs to be a PWM pin to be able to control motor speed
 int dir1PinC = 6;
 int dir2PinC = 7;
 int speedPinC = A2;// Needs to be a PWM pin to be able to control motor speed
-bool stayMotor = false;
 
 void setup() {  // Setup runs once per reset
     Serial.begin(9600);
@@ -117,14 +116,11 @@ void turnLeft(){
     analogWrite(speedPinB, 150);
     digitalWrite(dir1PinB, LOW);
     digitalWrite(dir2PinB, HIGH);
-//     digitalWrite(dir1PinB, HIGH);
-//     digitalWrite(dir2PinB, LOW); 
      Serial.println("TURN L");
      Serial.println("   ");
 }
 
 void turnLeftBACK(){
-  
     analogWrite(speedPinA, 200);  
     digitalWrite(dir1PinA, LOW);
     digitalWrite(dir2PinA, HIGH);
@@ -136,7 +132,6 @@ void turnLeftBACK(){
 }
 
 void turnLeftForward(){
-    
     analogWrite(speedPinA, 200);  
     digitalWrite(dir1PinA, HIGH);
     digitalWrite(dir2PinA, LOW);
