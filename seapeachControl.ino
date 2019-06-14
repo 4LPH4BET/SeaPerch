@@ -23,7 +23,7 @@ void setup() {  // Setup runs once per reset
     pinMode(speedPinB,OUTPUT);    
     pinMode(dir1PinC,OUTPUT);
     pinMode(dir2PinC,OUTPUT);
-    pinMode(speedPinC,OUTPUT);
+    pinMode(speedPinC,OUTPUT);FADSFASDF
 }
 
 void loop() {
