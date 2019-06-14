@@ -26,7 +26,7 @@ void setup() {  // Setup runs once per reset
     pinMode(speedPinC,OUTPUT);FADSFASDF
 }
 
-void loop() {
+void loop() {adfasfasf
   if (Serial.available() > 0) {
       char inByte = Serial.read();
       switch (inByte) {
