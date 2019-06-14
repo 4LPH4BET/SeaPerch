@@ -20,13 +20,13 @@ void setup() {  // Setup runs once per reset
     pinMode(speedPinA,OUTPUT);
     pinMode(dir1PinB,OUTPUT);
     pinMode(dir2PinB,OUTPUT);
-    pinMode(speedPinB,OUTPUT);    gfsdfdsdfasdfasdfasfasdf
+    pinMode(speedPinB,OUTPUT);
     pinMode(dir1PinC,OUTPUT);
     pinMode(dir2PinC,OUTPUT);
-    pinMode(speedPinC,OUTPUT);FADSFASDF
+    pinMode(speedPinC,OUTPUT);
 }
 
-void loop() {adfasfasf
+void loop() {
   if (Serial.available() > 0) {
       char inByte = Serial.read();
       switch (inByte) {
