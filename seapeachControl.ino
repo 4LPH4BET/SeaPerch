@@ -20,7 +20,7 @@ void setup() {  // Setup runs once per reset
     pinMode(speedPinA,OUTPUT);
     pinMode(dir1PinB,OUTPUT);
     pinMode(dir2PinB,OUTPUT);
-    pinMode(speedPinB,OUTPUT);    
+    pinMode(speedPinB,OUTPUT);    gfsdfdsdfasdfasdfasfasdf
     pinMode(dir1PinC,OUTPUT);
     pinMode(dir2PinC,OUTPUT);
     pinMode(speedPinC,OUTPUT);FADSFASDF
