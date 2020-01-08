@@ -4,7 +4,7 @@ int dir1PinA = 2;
 int dir2PinA = 3;
 int speedPinA = A0; // Needs to be a PWM pin to be able to control motor speed
 // Motor 2
-int dir1PinB = 4;
+int dir1PinB = 4; 
 int dir2PinB = 5;
 int speedPinB = A1; // Needs to be a PWM pin to be able to control motor speed
 // Motor 3
