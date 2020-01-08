@@ -1,6 +1,6 @@
 //using with putty for pressing without enter on serial moniter 
  
-int dir1PinA = 2;
+int dir1PinA = 2; 
 int dir2PinA = 3;
 int speedPinA = A0; // Needs to be a PWM pin to be able to control motor speed
 // Motor 2
